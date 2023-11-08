@@ -12,7 +12,7 @@ public class Main {
 		// StringTokenizer st = new StringTokenizer(br.readLine());
 		while (true) {
 			double a = Double.parseDouble(br.readLine());
-			if (a > 29) {
+			if (a > 29 || a < 20) {
 				if (cnt == 0) {
 					cnt = 1;
 					break;
