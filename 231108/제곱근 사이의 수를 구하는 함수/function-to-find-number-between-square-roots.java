@@ -7,6 +7,10 @@ public class Main {
 		double b = sc.nextDouble();
 		int a1 = (int) Math.sqrt(a);
 		int a2 = (int) Math.sqrt(b);
-		System.out.println(a1 - a2);
+		if(a1>a2){
+            System.out.prinln(a1-a2);
+        }else{
+            System.out.println(a2-a1);
+        }
 	}
 }
