@@ -11,7 +11,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		// StringTokenizer st = new StringTokenizer(br.readLine());
 		while (true) {
-			double a = Double.parseDouble(br.readLine());
+			float a = Float.parseFloat(br.readLine());
 			if (a > 29) {
 				break;
 			}
