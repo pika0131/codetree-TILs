@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		int a1 = (int) Math.sqrt(a);
+		int a2 = (int) Math.sqrt(b);
+		System.out.println(a1 - a2);
+	}
+}
