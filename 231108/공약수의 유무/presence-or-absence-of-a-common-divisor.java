@@ -12,6 +12,10 @@ public class Main {
 				cnt++;
 			}
 		}
-		System.out.println(cnt);
+		if (cnt >= 1) {
+			System.out.println(1);
+		} else {
+			System.out.println(0);
+		}
 	}
 }
