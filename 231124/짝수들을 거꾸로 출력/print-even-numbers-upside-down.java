@@ -6,15 +6,15 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-        int[] list = new int[n];
+        int[] list = new int[10];
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < list.length; i++) {
             list[i] = Integer.parseInt(st.nextToken());
         }
-        for (int i = list.length - 1; i >= 0; i--) {
-            if (list[i] % 2 == 0) {
-                System.out.print(list[i] + " ");
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] % 10 == 0) {
+                System.out.println(list[i - 1]);
+                break;
             }
         }
     }
