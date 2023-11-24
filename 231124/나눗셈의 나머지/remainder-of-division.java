@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] list = new int[1000];
-        int[] cnt = new int[9];
+        int[] cnt = new int[1000];
         int a = sc.nextInt();
         int b = sc.nextInt();
         int count = 0;
@@ -18,7 +18,7 @@ public class Main {
             count++;
         }
         int sum = 0;
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < cnt.length; i++) {
             sum += cnt[i] * cnt[i];
         }
         System.out.println(sum);
