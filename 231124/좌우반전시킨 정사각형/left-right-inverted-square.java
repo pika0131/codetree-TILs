@@ -7,7 +7,7 @@ public class Main {
         StringBuilder sb = new StringBuilder();
         int n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
+            for (int j = n; j >=1; j--) {
                 sb.append(i * j + " ");
             }
             sb.append("\n");
