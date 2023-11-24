@@ -13,7 +13,7 @@ public class Main {
         }
         for (int i = 0; i < 10; i++) {
             if (list[i] % 3 == 0) {
-                System.out.print(list[i]);
+                System.out.print(list[i-1]);
                 break;
             }
         }
