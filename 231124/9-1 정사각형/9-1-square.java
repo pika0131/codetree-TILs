@@ -10,11 +10,11 @@ public class Main {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (cnt == 1) {
-                    sb.append(cnt + " ");
+                    sb.append(cnt);
                     cnt = 9;
                     continue;
                 }
-                sb.append(cnt + " ");
+                sb.append(cnt);
                 cnt--;
 
             }
