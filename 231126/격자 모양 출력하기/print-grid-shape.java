@@ -9,17 +9,15 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        int[][] list = new int[n][m];
-        for (int i = 0; i < n; i++) {
+        int[][] list = new int[n][n];
+        for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
             int r = Integer.parseInt(st.nextToken());
             int c = Integer.parseInt(st.nextToken());
-            for (int j = 0; j < m; j++) {
-                list[r - 1][c - 1] = r * c;
-            }
+            list[r - 1][c - 1] = r * c;
         }
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
+            for (int j = 0; j < n; j++) {
                 System.out.print(list[i][j] + " ");
             }
             System.out.println();
