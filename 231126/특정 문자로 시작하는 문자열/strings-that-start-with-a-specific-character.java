@@ -17,16 +17,13 @@ public class Main {
         }
         String str = br.readLine();
         for (int i = 0; i < n; i++) {
-            if (list[i].contains(str)) {
+            if (list[i].startsWith(str)) {
                 cnt++;
                 sum += list[i].length();
             }
         }
         System.out.print(cnt + " ");
-        if (cnt == 0) {
-            System.out.printf("%.2f", sum);
-        } else {
-            System.out.printf("%.2f", (sum / cnt));
-        }
+
+        System.out.printf("%.2f", (sum / cnt));
     }
 }
