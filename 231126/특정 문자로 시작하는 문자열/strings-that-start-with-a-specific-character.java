@@ -23,6 +23,10 @@ public class Main {
             }
         }
         System.out.print(cnt + " ");
-        System.out.printf("%.2f", (sum / cnt));
+        if (cnt == 0) {
+            System.out.printf("%.2f", sum);
+        } else {
+            System.out.printf("%.2f", (sum / cnt));
+        }
     }
 }
