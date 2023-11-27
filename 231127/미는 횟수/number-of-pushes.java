@@ -1,26 +1,25 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String A = scanner.nextLine();
-        String B = scanner.nextLine();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String a = br.readLine();
+        String b = br.readLine();
 
-        int minRotation = findMinimumRotation(A, B);
-        System.out.println(minRotation);
+        System.out.println(cal(a, b));
     }
 
-    public static int findMinimumRotation(String A, String B) {
+    private static int cal(String A, String B) {
         if (A.length() != B.length()) {
             return -1;
         }
-
-        String doubleA = A + A;
-
         for (int i = 0; i < A.length(); i++) {
-            String rotated = doubleA.substring(i, i + A.length());
-            if (rotated.equals(B)) {
-                return i;
+            A = A.charAt(A.length() - 1) + A.substring(0, A.length() - 1);
+            if (A.equals(B)) {
+                return i + 1;
             }
         }
 
