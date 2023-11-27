@@ -20,7 +20,7 @@ public class Main {
             }
         }
         for (int i : dq) {
-            System.out.print(Character.toString(i) + "");
+            System.out.print(Character.toString(i));
         }
     }
 }
