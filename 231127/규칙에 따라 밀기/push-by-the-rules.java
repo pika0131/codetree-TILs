@@ -19,8 +19,8 @@ public class Main {
                 dq.addFirst(dq.pollLast());
             }
         }
-        for (int i : dq) {
-            System.out.print(Character.toString(i));
+        for (Character i : dq) {
+            System.out.print(i);
         }
     }
 }
