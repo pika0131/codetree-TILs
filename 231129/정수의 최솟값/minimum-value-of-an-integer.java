@@ -5,12 +5,14 @@ public class Main {
 
     public static int cal(int a, int b, int c) {
         int small = 101;
-        if (a < small) {
-            small = a;
-        } else if (b < small) {
-            small = b;
-        } else if (c < small) {
-            small = c;
+        for (int i = 0; i < 3; i++) {
+            if (a < small) {
+                small = a;
+            } else if (b < small) {
+                small = b;
+            } else if (c < small) {
+                small = c;
+            }
         }
         return small;
     }
