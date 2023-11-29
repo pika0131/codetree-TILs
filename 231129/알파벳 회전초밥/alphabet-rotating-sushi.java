@@ -1,8 +1,6 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigInteger;
 import java.util.*;
 
 public class Main {
@@ -10,18 +8,16 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
         String str2 = br.readLine();
-        Stack<Character> st = new Stack<>();
-        int cnt = 0;
+        long dup = 0;
         for (int i = 0; i < str2.length(); i++) {
-            if (!st.isEmpty()) {
-                if (st.peek() == str2.charAt(i)) {
-                    st.pop();
-                    continue;
-                }
-            }
-            cnt++;
-            st.push(str2.charAt(i));
+            dup += finddup(str, str2.charAt(i)) - 1;
         }
-        System.out.println(cnt);
+        System.out.println(str2.length() - dup);
+    }
+
+    public static long finddup(String str, char ch) {
+        return str.chars().
+                filter(c -> c == ch)
+                .count();
     }
 }
