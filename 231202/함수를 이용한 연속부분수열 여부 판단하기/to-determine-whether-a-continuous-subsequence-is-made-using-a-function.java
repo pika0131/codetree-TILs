@@ -12,9 +12,9 @@ public class Main {
     public static boolean cal(int n) {
         for (int i = 0; i < n2; i++)
             if (a[i + n] != b[i])
-                return true;
+                return false;
 
-        return false;
+        return true;
     }
 
     public static boolean isSubsequence() {
