@@ -6,20 +6,30 @@ import java.util.StringTokenizer;
 public class Main {
 
     public static boolean isValid(int M, int D) {
-        if (M == 2) {
+        //1 3 5 7 8 10 12
+        //4 6 9 11//
+        //2
+        if (M == 1 || M == 3 || M == 5 || M == 7 || M == 8 || M == 10 || M == 12) {
+            if (D > 31) {
+                return false;
+            } else {
+                return true;
+            }
+        } else if (M == 4 || M == 6 || M == 9 || M == 11) {
+            if (D > 30) {
+                return false;
+            } else {
+                return true;
+            }
+        } else if (M == 2) {
             if (D > 28) {
                 return false;
             } else {
                 return true;
             }
-        }
-        if (M > 12) {
+        } else {
             return false;
         }
-        if (D > 31) {
-            return false;
-        }
-        return true;
     }
 
 
