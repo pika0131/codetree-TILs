@@ -13,6 +13,9 @@ public class Main {
                 return true;
             }
         }
+        if (M > 12) {
+            return false;
+        }
         if (D > 31) {
             return false;
         }
