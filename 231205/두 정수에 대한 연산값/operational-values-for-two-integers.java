@@ -15,7 +15,7 @@ public class Main {
             a *= 2;
             b += 25;
         }
-        System.out.println(a + " " + b);
+        return;
     }
 
     public static void main(String[] args) throws IOException {
@@ -24,5 +24,6 @@ public class Main {
         int a = Integer.parseInt(st.nextToken());
         int b = Integer.parseInt(st.nextToken());
         cal(a, b);
+        System.out.println(a+" "+b);
     }
 }
