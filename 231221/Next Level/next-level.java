@@ -8,7 +8,7 @@ class userinfo {
     String name, lvl;
 
     public userinfo() {
-        this.name = "Codetree";
+        this.name = "codetree";
         this.lvl = "10";
     }
 
