@@ -8,7 +8,7 @@ public class Main {
      public static void main(String[] args)throws IOException {
           BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
           int n = Integer.parseInt(br.readLine());
-          list = new int[n];
+          list = new int[100];
           StringTokenizer st = new StringTokenizer(br.readLine());
           for(int i=0;i<n;i++){
                list[i]=Integer.parseInt(st.nextToken());
@@ -20,6 +20,6 @@ public class Main {
           if(n==0){
                return list[0];
           }
-          return Math.max(list[n-1],big((n-1)-1));
+          return Math.max(list[n],big(n-1));
      }
 }
